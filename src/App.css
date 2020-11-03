@@ -1,13 +1,13 @@
 body {
 	background-color: #cfdddd;
-	color: #4b2032;
+	color: #000000;
 	font-family: 'Homemade Apple', cursive;
 }
 
 .menu {
 	margin: 0 auto;
 	text-align: left;
-	background-color: black;
+	background-color: #000000;
 	color: #cfdddd;
 	height: 50px;
 }

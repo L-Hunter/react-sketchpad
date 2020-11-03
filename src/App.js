@@ -1,30 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
 
-  // this should be changed by changeColor
-  let bgColor = 'black';
-  let isDrawing = false;
+  const [isDrawing, setIsDrawing] = useState(false);
+  const [currentColor, setColor] = useState("black");
+
 
   const startDrawing = () => {
-    isDrawing = true;
+    setIsDrawing(true);
   } 
 
   const keepDrawing = (e) => {
     e.preventDefault();
     if (isDrawing) {
-      e.target.style.backgroundColor = bgColor;
+      e.target.style.backgroundColor = currentColor;
     }
   }
 
   const stopDrawing = () => {
-    isDrawing = false;
+    setIsDrawing(false);
   }
 
-  const changeColor = () => {
-    bgColor = 'yellow';
-    console.log(`A click! is this doing anything? what's the ${bgColor}`)
+  const changeColor = (color) => {
+    setColor(color);
   }
 
   const cells = [];
@@ -32,15 +31,14 @@ function App() {
     cells.push(<div className="cell" key={x} onMouseDown={ startDrawing } onMouseMove={ keepDrawing }  onMouseUp={ stopDrawing }></div>)
   }
 
-  const colors = ['white', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'black']
+  const colors = ['white', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'black'];
   const controls = [];
   for (let color of colors) {
-    controls.push(<button id={color} className={color} key={color} onClick={ changeColor }>{color}</button>)
+    controls.push(<button id={color} className={color} key={color} onClick={() => changeColor(color)}>{color}</button>);
   }
 
   return (
     <div className="App">
-      
       <div id="pad">
         <h1>Sketchpad in React</h1>
         <div className="buttons" >{controls}</div>
