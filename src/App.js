@@ -39,10 +39,12 @@ function App() {
 
   return (
     <div className="App">
-      <div id="pad">
-        <h1>Sketchpad in React</h1>
-        <div className="buttons" >{controls}</div>
-        <div id="pad">{cells}</div>
+      <div className="wrapper">
+        <div id="pad">
+          <h1>Sketchpad in React</h1>
+          <div className="buttons" >{controls}</div>
+          <div id="pad">{cells}</div>
+        </div>
       </div>
     </div>
   );
