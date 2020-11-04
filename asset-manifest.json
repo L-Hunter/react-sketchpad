@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-sketchpad/static/css/main.3a25c800.chunk.css",
+    "main.js": "/react-sketchpad/static/js/main.915bdc1c.chunk.js",
+    "main.js.map": "/react-sketchpad/static/js/main.915bdc1c.chunk.js.map",
+    "runtime-main.js": "/react-sketchpad/static/js/runtime-main.bb6d2581.js",
+    "runtime-main.js.map": "/react-sketchpad/static/js/runtime-main.bb6d2581.js.map",
+    "static/js/2.7a56cf90.chunk.js": "/react-sketchpad/static/js/2.7a56cf90.chunk.js",
+    "static/js/2.7a56cf90.chunk.js.map": "/react-sketchpad/static/js/2.7a56cf90.chunk.js.map",
+    "index.html": "/react-sketchpad/index.html",
+    "precache-manifest.e3985241cbe09a94d748514e67be5917.js": "/react-sketchpad/precache-manifest.e3985241cbe09a94d748514e67be5917.js",
+    "service-worker.js": "/react-sketchpad/service-worker.js",
+    "static/css/main.3a25c800.chunk.css.map": "/react-sketchpad/static/css/main.3a25c800.chunk.css.map",
+    "static/js/2.7a56cf90.chunk.js.LICENSE.txt": "/react-sketchpad/static/js/2.7a56cf90.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb6d2581.js",
+    "static/js/2.7a56cf90.chunk.js",
+    "static/css/main.3a25c800.chunk.css",
+    "static/js/main.915bdc1c.chunk.js"
+  ]
+}
